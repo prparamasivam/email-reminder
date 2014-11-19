@@ -11,16 +11,18 @@ var transporter = nodemailer.createTransport({
 
 remind.setMailTransporter(transporter); //configure transporter in the reminder module
 
+var email_sender = ''; //email sender
 var email_recipient = ''; //email recipient
 
+
 //remind after
-var a = remind.after('10 minutes', email_recipient, 'Call home');
+var a = remind.after('10 minutes', email_sender, email_recipient, 'Call home');
 
 //remind at
-var b = remind.at('13:05:00', email_recipient, 'Get ready for team lunch'); //provide time in 24 hour format
+var b = remind.at('13:05:00', email_sender, email_recipient, 'Get ready for team lunch'); //provide time in 24 hour format
 
 //remind every (recurring reminder)
-var c = remind.every('15 minutes', email_recipient, 'Drink water and work');
+var c = remind.every('15 minutes', email_sender, email_recipient, 'Drink water and work');
 
 //cancel reminder
 remind.cancel(a);
