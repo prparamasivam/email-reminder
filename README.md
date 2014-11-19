@@ -26,7 +26,7 @@ remind.cancel(a);
 //cancel recurring reminder
 remind.cancelRecurring(c);
 ```
-Refer example folder to configure SMTP username & password and send reminders.
+Refer example folder's index.js file to configure SMTP username & password. "npm install nodemailer" for sending mails.
 
 ## Release History
 
