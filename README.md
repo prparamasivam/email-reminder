@@ -12,19 +12,19 @@ A simple node utility to send email reminders.
 var remind = require('email-reminder');
    
 //remind after
-var a = remind.after('10 minutes', email_recipient, 'Call home');
+var rem_after = remind.after('10 minutes', email_sender, email_recipient, 'Call home');
 
 //remind at
-var b = remind.at('13:05:00', email_recipient, 'Get ready for team lunch'); //provide time in 24 hour format
+var rem_at = remind.at('13:05:00', email_sender, email_recipient, 'Get ready for team lunch'); //provide time in 24 hour format
 
 //remind every (recurring reminder)
-var c = remind.every('15 minutes', email_recipient, 'Drink water and work');
+var recc_rem = remind.every('15 minutes', email_sender, email_recipient, 'Drink water and work');
 
 //cancel reminder
-remind.cancel(a);
+remind.cancel(rem_after);
 
 //cancel recurring reminder
-remind.cancelRecurring(c);
+remind.cancelRecurring(recc_rem);
 ```
 Refer client folder's index.js file to configure SMTP username & password and send reminders.
 
