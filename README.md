@@ -28,9 +28,9 @@ remind.cancelRecurring(recc_rem);
 ```
 Refer client folder's index.js file to configure SMTP username & password and send reminders.
 
-## Release History
+## Release Version
 
-* 0.1.2
+* 0.1.3
 
 ## License
 
