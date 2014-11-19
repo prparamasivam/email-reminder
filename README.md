@@ -30,7 +30,7 @@ Refer client folder's index.js file to configure SMTP username & password and se
 
 ## Release History
 
-* 0.1.0 Initial release
+* 0.1.2
 
 ## License
 
