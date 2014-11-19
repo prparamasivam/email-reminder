@@ -8,10 +8,15 @@
     "url": "https://github.com/prparamasivam/email-reminder"
   },
   "keywords": [
+	"remind", 
+	"schedule",
     "email",
     "reminder",
     "send reminders",
-	"SMTP"
+	"SMTP",
+	"timer", 
+	"clock", 
+	"periodic"	
   ],
   "author": "Preethi Paramasivam <preethierode@gmail.com>",
   "bugs": {

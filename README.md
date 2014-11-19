@@ -30,11 +30,11 @@ Refer client folder's index.js file to configure SMTP username & password and se
 
 ## Methods
 
-remind.after
-remind.at
-remind.every
-remind.cancel
-remind.cancelRecurring
+* remind.after
+* remind.at
+* remind.every
+* remind.cancel
+* remind.cancelRecurring
 
 ## Release Version
 
