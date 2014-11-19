@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "nodemailer": "*"
-  }
+  },
   "license": "BSD",
   "readmeFilename": "README.md"
 }

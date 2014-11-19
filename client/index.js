@@ -1,16 +1,18 @@
-Email Reminder
-==============
-A simple node utility to send email reminders.
+var nodemailer = require("nodemailer");
+var remind = require('../index');
 
-## Installation
+var transporter = nodemailer.createTransport({
+    service: 'Gmail',
+    auth: {
+        user: '', //provide gmail username
+        pass: '' //provide gmail password
+    }
+});
 
-    $ npm install email-reminder
+remind.setMailTransporter(transporter); //configure transporter in the reminder module
 
-## Usage
+var email_recipient = ''; //email recipient
 
-```js
-var remind = require('email-reminder');
-   
 //remind after
 var a = remind.after('10 minutes', email_recipient, 'Call home');
 
@@ -25,13 +27,4 @@ remind.cancel(a);
 
 //cancel recurring reminder
 remind.cancelRecurring(c);
-```
-Refer client folder's index.js file to configure SMTP username & password and send reminders.
 
-## Release History
-
-* 0.1.0 Initial release
-
-## License
-
-* BSD
