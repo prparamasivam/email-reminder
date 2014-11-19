@@ -1,0 +1,25 @@
+{
+  "name": "email-reminder",
+  "version": "0.1.0",
+  "description": "A simple node utility to send email reminders",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prparamasivam/email-reminder"
+  },
+  "keywords": [
+    "email",
+    "reminder",
+    "send reminders",
+	"SMTP"
+  ],
+  "author": "Preethi Paramasivam <preethierode@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/prparamasivam/email-reminder/issues"
+  },
+  "devDependencies": {
+    "nodemailer": "*"
+  }
+  "license": "BSD",
+  "readmeFilename": "README.md"
+}
