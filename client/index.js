@@ -11,8 +11,8 @@ var transporter = nodemailer.createTransport({
 
 remind.setMailTransporter(transporter); //configure transporter in the reminder module
 
-var email_sender = ''; //email sender
-var email_recipient = ''; //email recipient
+var email_sender = ''; //sender's email (gmail)
+var email_recipient = ''; //recipient's email 
 
 
 //remind after

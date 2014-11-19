@@ -1,6 +1,6 @@
 {
   "name": "email-reminder",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple node utility to send email reminders",
   "main": "index.js",
   "repository": {
